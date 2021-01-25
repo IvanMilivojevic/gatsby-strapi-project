@@ -8,8 +8,6 @@ const Home = () => {
     <Layout>
       <Hero />
       <Services />
-      testing
-      <div>testing new </div>
     </Layout>
   )
 }
