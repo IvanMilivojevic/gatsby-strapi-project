@@ -12,11 +12,11 @@ const Header = () => {
           <Link to="/">
             <img src={Logo} alt="Logo" />
           </Link>
-          <button type="button" class={styles.mobileToggle}>
+          <button type="button" className={styles.mobileToggle}>
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 448 512"
               height="1em"
               width="1em"
