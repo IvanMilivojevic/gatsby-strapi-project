@@ -1,0 +1,52 @@
+.hero {
+  margin-top: -80px;
+  padding-top: 80px;
+  height: 100vh;
+  background: #e0fcff;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 65%;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+}
+
+.heroInner {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.heroInfo {
+  padding-top: 12px;
+  padding-right: 30px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.heroInfo:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  margin-bottom: 8px;
+  background: #2caeba;
+}
+
+.heroImage {
+  width: 55%;
+  border-radius: 50%;
+  overflow: hidden;
+}

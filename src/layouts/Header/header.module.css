@@ -1,0 +1,46 @@
+.header {
+  position: relative;
+  z-index: 10;
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 80px;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.mobileToggle {
+  font-size: 32px;
+  background-color: transparent;
+  border-color: transparent;
+  color: #2caeba;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.mobileToggle:hover {
+  color: #0a6c75;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    background-color: #fff;
+  }
+
+  .mobileToggle {
+    display: flex;
+  }
+}
