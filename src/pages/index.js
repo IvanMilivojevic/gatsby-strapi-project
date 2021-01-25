@@ -9,6 +9,7 @@ const Home = () => {
       <Hero />
       <Services />
       testing
+      <div>testing new </div>
     </Layout>
   )
 }
