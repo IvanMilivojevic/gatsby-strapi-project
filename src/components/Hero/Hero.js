@@ -29,7 +29,7 @@ const Hero = () => {
           <SocialLinks />
         </div>
         <div className={styles.heroImage}>
-          <Image fluid={data.avatar.childImageSharp.fluid} alt="" />
+          <Image fluid={data.avatar.childImageSharp.fluid} />
         </div>
       </div>
     </section>

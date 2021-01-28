@@ -81,6 +81,10 @@ a {
   background-color: #f1f5f7;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
 .text-center {
   text-align: center;
 }
