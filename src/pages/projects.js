@@ -1,29 +1,23 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../layouts/Layout"
-import Hero from "../components/Hero/Hero"
-import Services from "../components/Services/Services"
-import Jobs from "../components/Jobs/Jobs"
 import Projects from "../components/Projects/Projects"
 
-const Home = ({ data }) => {
+const ProjectsPage = ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },
   } = data
 
   return (
     <Layout>
-      <Hero />
-      <Services />
-      <Jobs />
-      <Projects projects={projects} title="Featured Projects" moreLink />
+      <Projects projects={projects} title="All Projects" />
     </Layout>
   )
 }
 
 export const query = graphql`
   {
-    allStrapiProjects(filter: { featured: { eq: true } }, limit: 3, sort: { fields: created_at, order: DESC }) {
+    allStrapiProjects {
       nodes {
         description
         links {
@@ -40,7 +34,7 @@ export const query = graphql`
         image {
           childImageSharp {
             fluid {
-              ...GatsbyImageSharpFluid_withWebp
+              src
             }
           }
         }
@@ -49,4 +43,4 @@ export const query = graphql`
   }
 `
 
-export default Home
+export default ProjectsPage

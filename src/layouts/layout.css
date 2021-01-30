@@ -75,6 +75,9 @@ a {
 .section-content {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bg-gray {
@@ -87,4 +90,16 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.inline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inline-list > li,
+.inline-list > li > a {
+  display: inline-flex;
+  align-items: center;
 }
