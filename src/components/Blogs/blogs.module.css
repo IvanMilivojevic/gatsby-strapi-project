@@ -1,0 +1,7 @@
+@media screen and (min-width: 992px) {
+  .blogArticles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+}

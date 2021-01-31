@@ -1,0 +1,23 @@
+.blogContent {
+  font-size: 20px;
+}
+
+.blogContent h2 {
+  color: #444;
+}
+
+.blogContent ul li {
+  margin-bottom: 5px;
+}
+
+.blogContent blockquote {
+  margin: 0;
+  padding: 30px;
+  background-color: lightgreen;
+}
+
+.blogContent pre {
+  background-color: #000;
+  color: yellow;
+  padding: 20px;
+}
