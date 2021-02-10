@@ -10,7 +10,7 @@ const BlogPage = ({ data }) => {
 
   return (
     <Layout>
-      <Blogs blogs={blogs} title="BLOG" />
+      <Blogs blogs={blogs} title="BLOG" className="blog-main" />
     </Layout>
   )
 }
@@ -27,7 +27,7 @@ export const query = graphql`
         title
         image {
           childImageSharp {
-            fluid {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

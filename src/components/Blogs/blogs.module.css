@@ -1,7 +1,16 @@
 @media screen and (min-width: 992px) {
-  .blogArticles {
+  .blogArticles,
+  .blogMainArticles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .blogMainArticles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
 }
