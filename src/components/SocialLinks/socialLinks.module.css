@@ -1,5 +1,5 @@
 .socialMenu {
-  display: flex;
+  display: inline-flex;
   list-style: none;
   padding: 0;
   margin: 15px 0 0;
@@ -9,4 +9,8 @@
   color: #000;
   font-size: 24px;
   margin-right: 12px;
+}
+
+.socialMenu.footerSocial a {
+  color: #fff;
 }
