@@ -1,0 +1,44 @@
+.aboutContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  align-self: center;
+}
+
+.info {
+  width: 50%;
+  padding-left: 40px;
+}
+
+.stack {
+  margin-top: 15px;
+}
+
+.stack li {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  background: lightgreen;
+  padding: 7px 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .aboutContent {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 650px;
+  }
+
+  .info {
+    width: 100%;
+    padding-left: 0;
+  }
+}
