@@ -4,7 +4,7 @@ import MainNav from "../../components/MainNav/MainNav"
 import Logo from "../../assets/images/logo.svg"
 import styles from "./header.module.css"
 
-const Header = () => {
+const Header = ({ toggleSidebar }) => {
   return (
     <header className={styles.header}>
       <div className={styles.headerInner}>
@@ -12,7 +12,7 @@ const Header = () => {
           <Link to="/">
             <img src={Logo} alt="Logo" />
           </Link>
-          <button type="button" className={styles.mobileToggle}>
+          <button type="button" className={styles.mobileToggle} onClick={toggleSidebar}>
             <svg
               stroke="currentColor"
               fill="currentColor"
