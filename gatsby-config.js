@@ -47,5 +47,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://strapi-gatsby-ivcha.netlify.app/",
+        sitemap: "https://strapi-gatsby-ivcha.netlify.app/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
   ],
 }

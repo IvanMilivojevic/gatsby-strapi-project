@@ -13,6 +13,7 @@ const Header = ({ transparentHeader, toggleSidebar }) => {
             <img src={Logo} alt="Logo" />
           </Link>
           <button type="button" className={styles.mobileToggle} onClick={toggleSidebar}>
+            <span className="sr-only">Open sidebar</span>
             <svg
               stroke="currentColor"
               fill="currentColor"

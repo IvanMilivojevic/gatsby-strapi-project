@@ -8,6 +8,7 @@ const Sidebar = ({ open, toggleSidebar }) => {
   return (
     <aside className={`${styles.sidebar} ${open ? styles.show : ""}`}>
       <button className={styles.closeButton} onClick={toggleSidebar}>
+        <span className="sr-only">Close sidebar</span>
         <FaWindowClose />
       </button>
       <MainNav />

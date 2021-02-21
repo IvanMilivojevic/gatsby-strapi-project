@@ -22,7 +22,7 @@ const Hero = () => {
       <div className={styles.heroInner}>
         <div className={styles.heroInfo}>
           <h1>I'm John</h1>
-          <h4>freelance web and mobile UI/UX Designer</h4>
+          <h2>freelance web and mobile UI/UX Designer</h2>
           <Link to="/contact" className="btn">
             Contact Me
           </Link>
