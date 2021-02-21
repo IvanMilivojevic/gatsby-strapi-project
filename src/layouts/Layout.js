@@ -4,7 +4,7 @@ import Footer from "./Footer/Footer"
 import Sidebar from "./Sidebar/Sidebar"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ transparentHeader, children }) => {
   const [open, setOpen] = useState(false)
 
   const toggleSidebar = () => {
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header toggleSidebar={toggleSidebar} />
+      <Header toggleSidebar={toggleSidebar} transparentHeader={transparentHeader} />
       <Sidebar open={open} toggleSidebar={toggleSidebar} />
       <main>{children}</main>
       <Footer />

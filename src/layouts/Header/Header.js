@@ -4,9 +4,9 @@ import MainNav from "../../components/MainNav/MainNav"
 import Logo from "../../assets/images/logo.svg"
 import styles from "./header.module.css"
 
-const Header = ({ toggleSidebar }) => {
+const Header = ({ transparentHeader, toggleSidebar }) => {
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${transparentHeader ? styles.trans : ""}`}>
       <div className={styles.headerInner}>
         <div className={styles.logoWrapper}>
           <Link to="/">

@@ -1,0 +1,27 @@
+.contact {
+  margin: auto 0;
+}
+
+.contactInner h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.contactInner form {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.contactInner button {
+  width: calc(100% + 40px);
+  margin: 0 -20px -20px;
+  display: block;
+  height: 50px;
+  border: 0;
+  background-color: #2caeba;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+}

@@ -100,3 +100,21 @@ a {
   display: inline-flex;
   align-items: center;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  min-height: 40px;
+  background-color: #f1f5f8;
+  border: 0;
+  padding: 10px;
+}

@@ -14,7 +14,7 @@ const Home = ({ data }) => {
   } = data
 
   return (
-    <Layout>
+    <Layout transparentHeader>
       <Hero />
       <Services />
       <Jobs />
