@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../layouts/Layout"
+import SEO from "../layouts/Seo/Seo"
 import styles from "../layouts/Primary/contact.module.css"
 
 const Contact = () => {
   return (
     <Layout>
+      <SEO title="Contact" description="Contact me about some project" />
       <section className={`section-content ${styles.contact}`}>
         <div className={`section-center ${styles.contactInner}`}>
           <h1>Contact</h1>

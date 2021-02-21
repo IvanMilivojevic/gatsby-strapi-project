@@ -6,6 +6,7 @@ import Services from "../components/Services/Services"
 import Jobs from "../components/Jobs/Jobs"
 import Projects from "../components/Projects/Projects"
 import Blogs from "../components/Blogs/Blogs"
+import SEO from "../layouts/Seo/Seo"
 
 const Home = ({ data }) => {
   const {
@@ -15,6 +16,7 @@ const Home = ({ data }) => {
 
   return (
     <Layout transparentHeader>
+      <SEO title="Home" description="Portfolio project landing page" />
       <Hero />
       <Services />
       <Jobs />

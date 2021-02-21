@@ -5,6 +5,13 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `Web Portfolio`,
+    description: `Creating web portoflio using Gatsby - The blazing fast modern site generator for React`,
+    author: `@webdev`,
+    image: `/og-image.jpg`,
+    siteUrl: `https://strapi-gatsby-ivcha.netlify.app`,
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -15,6 +22,8 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-strapi`,
       options: {

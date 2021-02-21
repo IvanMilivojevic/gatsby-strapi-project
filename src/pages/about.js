@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Image from "gatsby-image"
 import Layout from "../layouts/Layout"
+import SEO from "../layouts/Seo/Seo"
 import styles from "../layouts/Primary/about-page.module.css"
 
 const About = ({ data }) => {
@@ -12,6 +13,7 @@ const About = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="About" description="Small intro about me and my project" />
       <section className="section-content">
         <div className={`section-center ${styles.aboutContent}`}>
           <div className={styles.image}>
